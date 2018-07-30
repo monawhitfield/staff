@@ -25,9 +25,10 @@ ActiveRecord::Schema.define(version: 2018_07_30_215719) do
     t.string "name"
     t.string "email"
     t.integer "age"
-    t.string "role"
+    t.bigint "role_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["role_id"], name: "index_users_on_role_id"
   end
 
 end

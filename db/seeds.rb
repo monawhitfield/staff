@@ -6,6 +6,7 @@ Role.create({name: "manager"})
         name: Faker::Name.name,
         email: Faker::Internet.email,
         age: rand(15...40),
-        role: 'user'
+        role_id: rand(0...3)
     })
 end
+
