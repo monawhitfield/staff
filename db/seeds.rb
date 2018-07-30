@@ -1,3 +1,5 @@
+Role.create({name: "user"})
+Role.create({name: "manager"})
 
 10.times do |user|
     User.create({
